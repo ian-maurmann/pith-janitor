@@ -14,7 +14,7 @@
 
 declare(strict_types=1);
 
-namespace Pith\Framework\SharedInfrastructure\Tasks;
+namespace Pith\Janitor;
 
 use Pith\Framework\Base\PithException;
 use Pith\Framework\Internal\PithTouchstoneUtility;
@@ -22,7 +22,7 @@ use Pith\Workflow\PithTaskOrchestrator;
 
 /**
  * Class PithTaskOrchestrator
- * @package Pith\Framework\SharedInfrastructure\Tasks
+ * @package Pith\Janitor
  */
 class JanitorTaskOrchestrator extends PithTaskOrchestrator
 {
