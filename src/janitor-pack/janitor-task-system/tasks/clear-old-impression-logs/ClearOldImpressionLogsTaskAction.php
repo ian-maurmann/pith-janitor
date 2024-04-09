@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Clear Old Impressions Logs task action
- * --------------------------------------
+ * Clear Old Impression Logs task action
+ * -------------------------------------
  *
  * @noinspection PhpPropertyNamingConventionInspection - Property names with underscores are ok.
  * @noinspection PhpMissingParentCallCommonInspection  - Action parent methods exist as fallback.
@@ -18,10 +18,10 @@ namespace Pith\Janitor;
 use Pith\Workflow\PithAction;
 
 /**
- * Class ClearOldImpressionsLogsTaskAction
+ * Class ClearOldImpressionLogsTaskAction
  * @package Pith\Janitor
  */
-class ClearOldImpressionsLogsTaskAction extends PithAction
+class ClearOldImpressionLogsTaskAction extends PithAction
 {
     protected JanitorService $janitor_service;
 
@@ -43,9 +43,9 @@ class ClearOldImpressionsLogsTaskAction extends PithAction
         $cli_writer = $this->dependency_injection->container->get('\\Pith\\Framework\\PithCliWriter');
 
         // Header
-        $cli_writer->writeLine($format->fg_bright_yellow . '┏━────────────────────────────────────────────━┓' . $format->reset);
-        $cli_writer->writeLine($format->fg_bright_yellow . '┃  Janitor: ClearOldImpressionsLogsTaskAction  ┃' . $format->reset);
-        $cli_writer->writeLine($format->fg_bright_yellow . '┗━────────────────────────────────────────────━┛' . $format->reset);
+        $cli_writer->writeLine($format->fg_bright_yellow . '┏━────────────────────────────────────━┓' . $format->reset);
+        $cli_writer->writeLine($format->fg_bright_yellow . '┃  Janitor: Clear Old Impression Logs  ┃' . $format->reset);
+        $cli_writer->writeLine($format->fg_bright_yellow . '┗━────────────────────────────────────━┛' . $format->reset);
         $cli_writer->writeLine(' ');
 
         $time_21_days = 1814400; // 21 days in seconds

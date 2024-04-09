@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Clear Old Impressions Logs task route
+ * Clear Old Impression Logs task route
  * -------------------------------------
  *
  * @noinspection PhpPropertyNamingConventionInspection - Ignore.
@@ -17,14 +17,14 @@ namespace Pith\Janitor;
 use Pith\Workflow\PithRoute;
 
 /**
- * Class ClearOldImpressionsLogsTaskRoute
+ * Class ClearOldImpressionLogsTaskRoute
  * @package Pith\Janitor
  */
-class ClearOldImpressionsLogsTaskRoute extends PithRoute
+class ClearOldImpressionLogsTaskRoute extends PithRoute
 {
     public string $route_type   = 'task';
     public string $pack         = '\\Pith\\Janitor\\JanitorPack';
     public string $access_level = 'task';
-    public string $action       = '\\Pith\\Janitor\\ClearOldImpressionsLogsTaskAction';
+    public string $action       = '\\Pith\\Janitor\\ClearOldImpressionLogsTaskAction';
     public string $view_adapter = '\\Pith\\CliViewAdapter\\PithCliViewAdapter';
 }
