@@ -23,6 +23,9 @@
                 "src/janitor-pack/",
                 "src/janitor-pack/janitor-task-system/",
                 "src/janitor-pack/janitor-task-system/tasks/clear-old-impression-logs/",
+                "src/janitor-pack/janitor-task-system/tasks/clear-old-php-error-logs/",
+                "src/janitor-pack/janitor-task-system/tasks/clear-old-task-logs/",
+                "src/janitor-pack/janitor-task-system/tasks/clear-old-task-output-logs/",
                 "src/janitor-pack/services/"
             ]
         }
