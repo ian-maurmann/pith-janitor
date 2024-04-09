@@ -15,6 +15,7 @@ declare(strict_types=1);
 
 namespace Pith\Janitor;
 
+use Pith\Framework\Base\ThinWrappers\PithDependencyInjection;
 use Pith\Workflow\PithAction;
 
 /**
@@ -23,12 +24,15 @@ use Pith\Workflow\PithAction;
  */
 class ClearOldImpressionLogsTaskAction extends PithAction
 {
-    protected JanitorService $janitor_service;
+    protected PithDependencyInjection $dependency_injection;
+    protected JanitorService          $janitor_service;
 
-    public function __construct(JanitorService $janitor_service)
+
+    public function __construct(PithDependencyInjection $dependency_injection, JanitorService $janitor_service)
     {
         // Set object dependencies
-        $this->janitor_service = $janitor_service;
+        $this->dependency_injection = $dependency_injection;
+        $this->janitor_service      = $janitor_service;
     }
 
     /**
